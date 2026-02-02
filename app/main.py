@@ -30,4 +30,4 @@ def calculate_tax(employee_id: int, db: Session = Depends(get_db)):
     return {"nama": emp.name, "pph": tax}
 @app.get("/")
 def root():
-    return {"message": "Tax Service Online"}
+    return {"message": "Tax Service is running"}
